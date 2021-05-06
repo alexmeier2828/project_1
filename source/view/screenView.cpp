@@ -1,6 +1,7 @@
 #include "screenView.hpp"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <random>
 using namespace project_1::view;
 ScreenView::ScreenView(){
     std::cout << "test";
@@ -16,7 +17,7 @@ ScreenView::ScreenView(){
 void ScreenView::Draw(sf::RenderWindow &window){
     for(int x = 0; x < SCREEN_X; x++){
         for(int y = 0; y < SCREEN_Y; y++){
-            this->ViewGrid[x][y]->Draw(window);
+            this->ViewGrid[x][y]->Draw(window); 
         }
     }
 }
