@@ -14,11 +14,11 @@ AnimatedSprite::AnimatedSprite(int x, int y, int frames, const std::string& file
         this->_tick = 0;
         
         //attempt to load sprite sheet
-        sf::Texture texture;
-        if(!texture.loadFromFile(file)){
+        _texture = new sf::Texture();
+        if(_texture->loadFromFile(file)){
             std::cout << "error occured opening sprite";
         }
-        this->setTexture(texture);
+        this->setTexture(*_texture);
         this->setTextureRect(
             sf::Rect(
                 _sizeX * (_tick % _frames),

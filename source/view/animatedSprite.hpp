@@ -11,6 +11,7 @@ namespace project_1::view
         void Tick();
         private:
         int _sizeX, _sizeY, _frames, _tick;
+        sf::Texture *_texture;
     };
 } // namespace project_1::view
 #endif // __ANIMATEDSPRITE__
