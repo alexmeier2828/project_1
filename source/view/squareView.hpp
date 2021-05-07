@@ -1,6 +1,7 @@
 #ifndef __SQUAREVIEW__
 #define __SQUAREVIEW__
 #include <SFML/Graphics.hpp>
+#include "animatedSprite.hpp"
 #include "view.hpp"
 namespace project_1::view
 {
@@ -12,6 +13,7 @@ namespace project_1::view
         int p_x;
         int p_y;
         int frame;
+        AnimatedSprite *_animatedSprite;
     };
 } // namespace project_1::view
 #endif
