@@ -18,6 +18,7 @@ addons:
     packages:
       - cmake-data
       - cmake
+      - libsfml-dev
 
 before_script:
   # create a build folder for the out-of-source build
