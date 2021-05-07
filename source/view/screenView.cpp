@@ -14,6 +14,7 @@ ScreenView::ScreenView(){
     }
 }
 
+//test
 void ScreenView::Draw(sf::RenderWindow &window){
     for(int x = 0; x < SCREEN_X; x++){
         for(int y = 0; y < SCREEN_Y; y++){
