@@ -1,12 +1,19 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "view/screenView.hpp"
+#include "view/util/spriteSheetManager.hpp"
 
 using namespace project_1;
+
 
 int main(int argc, char **argv){
     sf::RenderWindow window(sf::VideoMode(500, 500), "hello world");
     view::ScreenView screenView;
+
+    view::util::SpriteSheetManager spriteSheetManager(
+        10, 
+        2,
+        "/Users/alexmeier/Desktop/workspace/project_1/resources/tile-1.png");
     while(window.isOpen()){
         sf::Event event;
         while(window.pollEvent(event)){
